@@ -1,0 +1,337 @@
+
+.containerShow {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: #fff;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+  padding: 4px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 101;
+}
+
+.topBox {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  width: 90%;
+  height: 70px;
+  transform: translateX(-50%);
+  background-color: #202D41;
+  color: #fff;
+  border-radius: 8px;
+  .destDescBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 28px;
+    line-height: 24px;
+    padding: 0 12px;
+    border-top: 1px solid #1F2938;
+  }
+  .naviDescBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    font-size: 20px;
+    padding-left: 20px;
+    .currentPlace {
+      width: 50%;
+    }
+    .destinationPlace {
+      text-align: left;
+    }
+    .imageShow {
+      width: 25px;
+      height: 25px;
+      margin-right: 20px;
+    }
+  }
+  
+
+}
+
+.showButton {
+  display: flex;
+}
+.lineHeight{
+  margin-top: 10px;
+  height: 1px;
+  //background-color: #e5e5e5;
+  background-color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.cancelBtn {
+  width: 42px;
+  text-align: center;
+  font-size: 12px;
+  padding: 0 4px;
+  color: #666;
+  span{
+    color: #1E82FA;
+  }
+}
+
+.exitContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  width: 90%;
+  height: 42px;
+  background: #fff;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  justify-content: space-around;
+  .minuteTime{
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .exit{
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+  }
+}
+.exitFa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.showListRoute{
+  width: 85px;
+  height: 30px;
+  font-size:12px;
+  display:flex;
+  align-items: center;
+  margin-right: 3px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding-left: 5px;
+  margin-right: 30px;
+  .ImageSize {
+    width: 15px;
+    height: 12px;
+  }
+  .fontColor{
+    color: #666;
+    margin-left: 5px;
+  }
+}
+
+.showList{
+  width: 85px;
+  height: 30px;
+  font-size:12px;
+  display:flex;
+  align-items: center;
+  margin-right: 3px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding-left: 5px;
+  .ImageSize {
+    width: 20px;
+    height:20px;
+  }
+  .fontColor{
+    color: #666;
+    margin-left: 5px;
+  }
+}
+
+.showListCollect {
+  width: 85px;
+  height: 30px;
+  font-size:12px;
+  display:flex;
+  align-items: center;
+  margin-right: 3px;
+  background: #fff;
+  //border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding-left: 5px;
+  .ImageSize {
+    width: 20px;
+    height:20px;
+  }
+  .fontColor{
+    color: #666;
+    margin-left: 5px;
+  }
+}
+
+.showListA{
+  width: 85px;
+  height: 30px;
+  font-size:12px;
+  display:flex;
+  align-items: center;
+  margin-right: 3px;
+  background: #2E9FFB;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding-left: 5px;
+  .ImageSizeA {
+    width: 20px;
+    height:20px;
+  }
+  .fontColorA{
+    color: #FFFFFF;
+    margin-left: 5px;
+  }
+}
+
+
+.showListHereOne{
+  width: 85px;
+  height: 30px;
+  font-size:12px;
+  display:flex;
+  align-items: center;
+  //background: #d3302a;
+  background: #2E9FFB;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding-left: 5px;
+  .ImageSize {
+    width: 20px;
+    height:20px;
+  }
+  .fontColorHere{
+    color: #fff;
+    margin-left: 5px;
+  }
+}
+
+.showListShare{
+  width: 80px;
+  font-size:12px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2px;
+  .ImageSize {
+    width: 20px;
+    height:20px;
+  }
+  .fontColor{
+    color: #666;
+  }
+}
+
+.LogOut{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.LogOutRoute {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+.LogHere{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 6px;
+  margin-bottom: 10px;
+}
+
+.currLocation{
+  display: flex;
+}
+
+
+.cancelBtnIcon {
+  display: block;
+  width: 100%;
+  height: 24px;
+  background: url("../../assets/image/close_btn.png") center center no-repeat;
+  background-size: contain;
+}
+
+.destination {
+  position: relative;
+  flex: 1;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.placeName {
+  padding-left: 35px;
+  width: 68vw;
+  font-family: PingFang-SC-Medium;
+  font-size: 16px;
+  color: #101010;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-top: 10px;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/image/n_cell_location@3x.png") center center no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
+  }
+}
+
+.placePoint {
+  padding-left: 35px;
+}
+
+.goHere {
+  width: 42px;
+  text-align: center;
+  font-size: 12px;
+  // border-left: 1px solid #ccc;
+  padding: 0 4px;
+  color: #666;
+  position:relative;
+}
+
+.cancleIcon {
+  width: 28px;
+  height: 28px;
+  position: absolute !important;
+  top: 3px;
+  right: 5px;
+  font-size: 18px;
+}
+
+// .cancle {
+//   width: 42px;
+//   text-align: center;
+// }
+
+.goHereIcon {
+  display: block;
+  width: 100%;
+  height: 24px;
+  background: url("../../assets/image/go_here.png") center center no-repeat;
+  background-size: contain;
+  margin-bottom: 4px;
+}
+

@@ -1,0 +1,55 @@
+// 解决H5在ios上没有滚动条，滑动不了问题
+//html,body {
+//  position: fixed;
+//  left: 0;
+//  top: 0;
+//  overflow-y: scroll !important;
+//  -webkit-overflow-scrolling: touch !important;
+//}
+
+.articleContet {
+  height:100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 70px;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
+  display: webkit-box;
+  paddingbottom: 10px;
+  margin-bottom: -10px;
+}
+
+// 返回按钮样式
+.search_input_bd {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  //background: #d3302a;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+}
+
+.search_input_back {
+  width: 44px;
+  height: 44px;
+  background: url("../../assets/image/n_back@3x.png") center center no-repeat;
+  background-size: contain;
+  box-sizing: content-box;
+  z-index: 99999;
+  cursor: pointer !important;
+}
+.contain {
+  h3 {
+    margin-bottom: 30px;
+  }
+  img {
+    margin: 5px 0;
+  }
+  img:last-child {
+    margin-bottom: 68px;
+  }
+}

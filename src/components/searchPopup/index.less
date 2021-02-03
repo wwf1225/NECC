@@ -1,0 +1,143 @@
+body{
+  overflow-y: auto;
+}
+.popMessage {
+  //height: 23vh !important;
+  height: 40vh !important;
+  background-color: #fff;
+  //overflow-y: auto;
+  overflow-y: auto !important;
+  //-webkit-overflow-scrolling: touch;
+  // border-top-left-radius: 5px;
+  // border-top-right-radius: 5px;
+  ul {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    position: relative;
+    li {
+      list-style: none;
+      border-bottom: 1px solid #e6e6e6;
+        &.active{
+          background: #00BAC9;
+        }
+    }
+    .lineHeight {
+      height: 1px;
+      background-color:#eee;
+    }
+    .showName { 
+      font-size: 15px;
+      color: #707070;
+      text-overflow:ellipsis; 
+      white-space:nowrap; 
+      overflow:hidden;
+      float: left;
+    }
+  }
+  .footer {
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 14px;
+    opacity: .3;
+  }
+  .footerNo {
+    display: flex;
+    justify-content: center;
+    line-height: 200px;
+    font-size: 16px;
+    opacity: .3;
+  }
+}
+
+.popDown {
+  display: none
+}
+
+.showImg {
+  width:24px;
+  height:24px;
+  margin-top: 6px;
+}
+
+.clearfix{
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  .showImg {
+    width:40px;
+    height:40px;
+    margin-top: 6px;
+  }
+}
+.borderIndexLi {
+  background-color: #2E9FFE;
+}
+.borderBackgroundLi {
+
+}
+
+.singleItem {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .singleName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .borderIndex{
+      //width: 24px;
+      //height: 24px;
+      //border-radius: 12px;
+      //background: red;
+      //text-align: center;
+      //color: #fff;
+      //line-height: 24px;
+      //font-size: 2.667vw;
+      margin-bottom: 22px;
+      color: #000;
+
+    }
+    .borderBackground{
+      //width: 24px;
+      //height: 24px;
+      //border-radius: 12px;
+      //background: #2E9FFE;
+      //text-align: center;
+      //color: #fff;
+      //line-height: 24px;
+      //font-size: 2.667vw;
+      margin-bottom: 22px;
+      color: #000;
+    }
+    .distance {
+      margin-left: 18px;
+      .distanceName{
+        font-size: 14px;
+        width: 60vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        text-align: left;
+      }
+      .distanceFloor{
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+}
+
+.goThere{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  .textHere {
+    font-size: 12px;
+  }
+}

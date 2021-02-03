@@ -1,0 +1,110 @@
+// 解决H5在ios上没有滚动条，滑动不了问题
+.marqueeCard {
+  width: 100vw;
+  height: 100%;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  margin-top: 12vh;
+}
+
+.cards {
+  height: 100%;
+  margin-top: 10px;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+
+  .cardTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .cardTopImgs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .cardTopImg {
+        width: 16px;
+        height: 16px;
+        background: url("../../assets/image/n_notice_logo@2x.png") center center no-repeat;
+        background-size: contain;
+      }
+
+      .cardTopImgOne {
+        font-family: PingFang-SC-Medium;
+        font-size: 12px;
+        color: #666666;
+        margin-left: 10px;
+      }
+    }
+
+    .cardTopDate {
+      font-size: 10px;
+      color: #999999;
+    }
+  }
+
+  .cardTitle {
+    font-family: PingFang-SC-Medium;
+    font-size: 16px;
+    color: #101010;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .cardButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    .cardButton_one {
+      font-family: PingFang-SC-Medium;
+      font-size: 12px;
+      color: #2e9ffb;
+    }
+
+    .cardButton_two {
+      width: 12px;
+      height: 12px;
+      background: url("../../assets/image/n_arrow@2x.png") center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+// 返回按钮样式
+.search_input_bd {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  //background: #d3302a;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+}
+
+.search_input_back {
+  width: 44px;
+  height: 44px;
+  //background: url("../../assets/image/back.png") center center no-repeat;
+  background: url("../../assets/image/n_back@3x.png") center center no-repeat;
+  background-size: contain;
+  box-sizing: content-box;
+  z-index: 99999;
+}

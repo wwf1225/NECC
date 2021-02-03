@@ -1,0 +1,117 @@
+.container_marqu{
+  position: absolute;
+  left: 50%;
+  top: 7vh;
+  width: 81vw;
+  height: 30px;
+  background: #fff;
+  transform: translateX(-50%);
+  border-radius:20px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: 20px;
+  line-height: none !important;
+  .container_logo{
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    z-index: 100;
+    width: 70px;
+    padding-left: 10px;
+    //.container_img{
+    //  width: 100%;
+    //  height: 100%;
+    //  background: url("../../assets/image/marquee_logo@2x.png") center center no-repeat;
+    //  background-size: contain;
+    //}
+    .container_logo_mark {
+      font-family: PingFang-SC-Medium;
+      font-size: 14px;
+      color: #2e9ffb;
+    }
+  }
+  // 左右滚动 对应结构span
+  //.container_text{
+  //  display: inline-block;
+  //  //padding-left: 100%; /* show the marquee just outside the paragraph */
+  //  animation: marquee 18s linear infinite;
+  //  font-family: PingFang-SC-Medium;
+  //  font-size: 12px;
+  //  color: #2e9ffb;
+  //  .notify_title{
+  //    margin-right: 60px;
+  //  }
+  //}
+
+
+  // 上下滚动 对应结构div
+  .container_text{
+    width: 60vw;
+    display: inline-block;
+    padding-top: 10%;
+    animation: marquee 5s linear infinite;
+    font-family: PingFang-SC-Medium;
+    font-size: 13px;
+    color: #2e9ffb;
+    overflow: hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+    .notify_title{
+      margin-left: 75px;
+    }
+  }
+}
+
+.showDetailInfo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: #FFF;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  height: 110px;
+  width: 220px;
+  padding: 5px;
+  ul{
+    height: 100%;
+    overflow-y: auto;
+    .showDetailInfoLi{
+      border-bottom: 1px solid #eeeeee;
+      margin-bottom: 8px;
+      .detailTitle{
+        font-size: 12px;
+        margin-bottom: 2px;
+      }
+      .detailMessage{
+        font-size: 10px;
+        color: gray;
+      }
+    }
+  }
+}
+
+
+/* Make it move 左右滚动 */
+//@keyframes marquee {
+//  0% {
+//    transform: translate(0, 0);
+//  }
+//  100% {
+//    transform: translate(-100%, 0);
+//  }
+//}
+
+
+// 上下滚动
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}

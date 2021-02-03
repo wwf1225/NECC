@@ -1,0 +1,153 @@
+// 重置样式
+@import "base/reset.less";
+// 颜色
+@import "base/color.less";
+//字体
+@import "base/font.less";
+// animate
+@import "../animate/_base.css";
+@import "../animate/slideInUp.css";
+@import "../animate/zoomIn.css";
+
+// react-weui
+@import "~react-weui/build/packages/react-weui.css";
+
+//* {
+//  background-color: #ffffff;
+//}
+//html,body {
+//  background-color: #ffffff;
+//}
+
+// 共用css class
+.img-responsive {
+  display: block;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-t-60 {
+  margin-top: 60px;
+}
+
+.m-tb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.m-l-xl {
+  margin-left: 32px;
+}
+
+.m-r-xl {
+  margin-right: 32px;
+}
+
+.weui-navbar__item:after {
+  border-right: none;
+}
+
+.weui-navbar {
+  top: 40px;
+  position: fixed;
+  margin-top: 30px;
+}
+
+
+.weui-navbar__item.weui-bar__item_on {
+  border-bottom: 2px solid #2ABBC3;
+  color: #56A9E5 !important;
+  background-color: #ffffff !important;
+}
+.weui-navbar{ 
+  top: 40px;
+  position: fixed;
+}
+.react-weui-ptr__content{
+  margin-top: 40px;
+}
+
+.weui-mask {
+  background: none;
+  z-index: 0;
+  display: none !important;
+}
+
+.weui-popup_toggle {
+  // border-top-left-radius: 5px;
+  // border-top-right-radius: 5px;
+}
+
+.weui-uploader__title,
+.weui-uploader__info {
+  display: none !important;
+}
+.weui-cells:after,.weui-cells:before,.weui-cell:before,.weui-cell:after {
+  display: none;
+}
+// 去掉input 默认边框
+input {
+  border: 0;  // 去除未选中状态边框
+  outline: none; // 去除选中状态边框
+  background-color: rgba(0, 0, 0, 0);// 透明背景
+}
+.weui-dialog__btn_default {
+  font-size: 16px;
+}
+.weui-dialog__btn_primary {
+  font-size: 16px;
+  color: #2e9ffb;
+ }
+.weui-tab__bd-item {
+  border: none !important;
+  outline: none !important;
+}
+
+// 解决ios 获取焦点不灵敏
+input, textarea{
+  -webkit-user-select: auto!important;
+  -khtml-user-select: auto!important;
+  -moz-user-select: auto!important;
+  -ms-user-select: auto!important;
+  -o-user-select: auto!important;
+  user-select: auto!important;
+}
+
+.weui-dialog {
+  margin-top: 10vh;
+  z-index: 9999;
+  background-color: #f9f9f9;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.weui-icon-search:before {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+

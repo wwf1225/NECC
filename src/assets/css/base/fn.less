@@ -1,0 +1,7 @@
+@import "variable";
+
+.viewport-px2vh(@property,@value) {
+  @vhValue: round(@value / @viewportHeight * 100, 3);
+
+    @{property}: unit(@vhValue, vh);
+}

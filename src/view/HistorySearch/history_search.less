@@ -1,0 +1,308 @@
+//常用搜索界面
+html,body {
+  background-color: #ffffff;
+}
+.search-legend {
+  &-bd {
+    //background: #f7f7f7;
+    margin-top: 7vh;
+    padding: 5px;
+    height: 13vh;
+  }
+  &-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 4px;
+  }
+  &-item {
+    border-radius: 5px;
+    line-height: 1;
+    flex: 1;
+
+    &:active {
+      background: #E0E0E0;
+    }
+    &.no-active {
+      background: transparent;
+    }
+
+    .img-icon {
+      //width: 20.667vw;
+      //height: 14.667vw;
+      //background: center center no-repeat;
+      //margin: 0 auto 0.667vw;
+
+      //&.food {
+      //  background-image: url('../../assets/image/icon_food@2x.png');
+      //  background-size: contain;
+      //}
+      //&.elevator {
+      //  background-image: url('../../assets/image/icon_Elevator@2x.png');
+      //  background-size: contain;
+      //}
+      //&.toilet {
+      //  background-image: url('../../assets/image/icon_Restroom@2x.png');
+      //  background-size: contain;
+      //}
+      //&.subway {
+      //  background-image: url('../../assets/image/icon_metro@2x.png');
+      //  background-size: contain;
+      //}
+      //&.parking {
+      //  background-image: url('../../assets/image/icon_entrance@2x.png');
+      //  background-size: contain;
+      //}
+      width: 8.667vw;
+      height: 11.667vw;
+      background: center center no-repeat;
+      margin: 0 auto 0.667vw;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      &.food {
+        background-image: url('../../assets/image/n_collect_icon_9@2x.png');
+        background-size: contain;
+      }
+      &.elevator {
+        background-image: url('../../assets/image/n_collect_icon_6@2x.png');
+        background-size: contain;
+      }
+      &.toilet {
+        background-image: url('../../assets/image/n_collect_icon_7@2x.png');
+        background-size: contain;
+      }
+      &.subway {
+        background-image: url('../../assets/image/n_collect_icon_8@2x.png');
+        background-size: contain;
+      }
+      &.parking {
+        background-image: url('../../assets/image/n_collect_icon_5@2x.png');
+        background-size: contain;
+      }
+    }
+    .text{
+      width: 19vw;
+      margin-left: 1.2vw;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+.noSearch {
+  font-family: PingFang-SC-Regular;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: #C7C7C7;
+  margin-left: 2.66vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //-webkit-touch-callout: none;
+  //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+}
+
+.historyTitle {
+  height: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  //background: #f2f2f2;
+  border-bottom: 1px solid #F4F4F4;
+  border-top: 1px solid #F4F4F4;
+  margin-top: 20px;
+  //-webkit-touch-callout: none;
+  //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+  .historyText{
+    color: #E2E2E2;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    //-webkit-touch-callout: none;
+    //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+  }
+  .rightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ImageSize {
+      width:16px;
+      height: 16px;
+      background: url('../../assets/image/n_cell_clean@2x.png') center center no-repeat ;
+      background-size: contain;
+      border: 0 !important;
+      outline: 0 !important;
+      border-style:none !important;
+      border-width:0 !important;
+      margin-right: 6px;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      //-webkit-touch-callout: none;
+      //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+    }
+    .clearText{
+      color: #E2E2E2;
+      font-size: 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      //-webkit-touch-callout: none;
+      //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+    }
+  }
+}
+.historyCont {
+  height: 50vh;
+  overflow-y: scroll !important;
+}
+
+
+.singleShowStyle {
+  padding: 10px 20px 10px 20px;
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  .LeftStyle {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .imageContainer {
+      text-align: center;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .IconImage {
+        width: 13px;
+        height: 16px;
+        margin-top: 3px;
+      }
+      .typeName {
+        font-size: 12px;
+        color: gray;
+        width: 8vw;
+      }
+    }
+    .POINameStyle {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 10px;
+      margin-bottom: 7px;
+      .POIName{
+        font-family: PingFang-SC-Medium;
+        font-size: 16px;
+        color: #101010;
+        margin-bottom: 5px;
+        font-weight: 400;
+        width: 70vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        text-align: left;
+      }
+      .POINameFloor{
+        font-family: PingFang-SC-Medium;
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+  .RightStyle {
+    width: 50%;
+    height: 50px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    .imageContainer {
+      text-align: center;
+      .shareImage {
+        width: 17px;
+        height:21px;
+      }
+      .typeName {
+        font-size: 12px;
+        color: gray;
+        width: 8vw;
+      }
+    }
+    .rightPosition {
+      .shareImage {
+        width: 25px;
+        height:25px;
+      }
+      .POINameFloor {
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+  .lineHiehgt {
+    height: 1px;
+    width: 100%;
+    background: red;
+  }
+}
+
+.noMoreStyle {
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .emptyIcon {
+    width: 90px;
+    height: 80px;
+    vertical-align: middle;
+  }
+  .textStyle {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.noSearchHistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //-webkit-touch-callout: none;
+  //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+}
+.noSearchHistoryImg {
+  width: 32vw;
+  height: 21.33vw;
+  margin-top: 12vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //-webkit-touch-callout: none;
+  //pointer-events: none; // 像微信浏览器还是无法禁止，加上这行样式即可
+}

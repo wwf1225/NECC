@@ -1,0 +1,28 @@
+.swipe-item {
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  &-wrap {
+    width: calc(100vw + 60px);
+    height: 100%;
+    position: relative;
+  }
+
+  &-left {
+    width: 100vw;
+    transform: translateX(0px)
+  }
+
+  &-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #d1312a;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    right: -60px;
+    top: 0;
+  }
+}

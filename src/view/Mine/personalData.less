@@ -1,0 +1,110 @@
+.personalCont {
+  //width: 100vw;
+  //height: 100%;
+  //position: fixed;
+  //left: 0;
+  //top: 0;
+  //overflow-y: scroll !important;
+  //-webkit-overflow-scrolling: touch !important;
+}
+
+.personal {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  padding-top: 80px;
+  .cardT:nth-child(1) {
+    border-top: 1px solid #e6e6e6;
+  }
+  .cardT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+    .cardTitle {
+      font-family: PingFang-SC-Medium;
+      font-size: 16px;
+      color: #101010;
+
+    }
+    .cardContent {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .cardContentNameOne {
+        width: 36px;
+        height: 36px;
+        //background: url("../../assets/image/n_headphoto_03.png") center center no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+      }
+      .inputFile {
+        opacity: 0;
+      }
+      .cardContentName {
+        font-family: PingFang-SC-Regular;
+        font-size: 16px;
+        color: #000;
+        margin-right: 10px;
+        border: none;
+        background-color: #FFFFFF;
+      }
+      .cardContentName:focus {
+        outline:none !important;
+      }
+      input[type=text]:focus {
+        outline:none !important;
+      }
+      .cardContentImg {
+        width: 18px;
+        height: 18px;
+        background: url("../../assets/image/n_arrow_right.png") center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.cardContentA {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .cardContentNameOneA {
+    width: 36px;
+    height: 36px;
+    //background: url("../../assets/image/n_headphoto_03.png") center center no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .inputFileA {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+  }
+  //.cardContentName {
+  //  font-family: PingFang-SC-Regular;
+  //  font-size: 16px;
+  //  color: #000;
+  //  margin-right: 10px;
+  //  border: none;
+  //  background-color: #FFFFFF;
+  //}
+  //.cardContentName:focus {
+  //  outline:none !important;
+  //}
+  input[type=text]:focus {
+    outline:none !important;
+  }
+  .cardContentImgA {
+    width: 18px;
+    height: 18px;
+    background: url("../../assets/image/n_arrow_right.png") center center no-repeat;
+    background-size: contain;
+  }
+}
